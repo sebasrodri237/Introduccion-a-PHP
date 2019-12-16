@@ -2,37 +2,49 @@
 
 require_once 'vendor/autoload.php';
 
-use App\Models\{Job, Project, Printable};
+use App\Models\{Job, Project};
 
-$job1 = new Job('PHP Developer', 'This is an awesome job!!!');
-$job1->months = 16;
+// $job1 = new job('Web Developer',
+//                 'Let me create your websites for individual, startup or company/store/business.',
+//                 14,
+//                 true);
 
-$job2 = new Job('Python Developer', 'This is an awesome job!!!');
-$job2->months = 24;
+// $job2 = new job('Wordpress Dev',
+//                 'Let me create your websites for individual, startup or company/store/business with the great content management system Wordpress, more easy and quickly.',
+//                 2,
+//                 true);
 
-$job3 = new Job('Devops', 'This is an awesome job!!!');
-$job3->months = 32;
+// $job3 = new job('PHP',
+//                 'Fundamental skills about PHP for backend developer.',
+//                 1,
+//                 false);
+
+// $job4 = new job('Javascript',
+//                 'Javascript developer frontend and backend.',
+//                 5,
+//                 true);
+
+// $job5 = new job('Data Base',
+//                 'Fundamental skills about relational data base.',
+//                 1,
+//                 false);
+
+$jobs = Job::all();/*Metodo de acceso para utilziar Elocuent
+y obtener los registros que encuentre*/
 
 $project1 = new Project('Project 1', 'Description 1');
-
-$jobs = [
-    $job1,
-    $job2,
-    $job3
-  ];
-
 $projects = [
     $project1
 ];
   
-function printElement(Printable $job) {
-    if($job->visible == false) {
-      return;
-    }
+function printElement($job) {
+    // if($job->visible == false) {
+    //   return;
+    // }
   
     echo '<li class="work-position">';
-    echo '<h5>' . $job->getTitle() . '</h5>';
-    echo '<p>' . $job->getDescription() . '</p>';
+    echo '<h5>' . $job->title. '</h5>';
+    echo '<p>' . $job->description. '</p>';
     echo '<p>' . $job->getDurationAsString() . '</p>';
     echo '<strong>Achievements:</strong>';
     echo '<ul>';
