@@ -2,7 +2,7 @@
 
 require_once('jobs.php');
 
-$name = 'Hector Benitez';
+$name = 'Sebastian Rodriguez Ardila';
 $limitMonths = 2000;
 
 ?>
@@ -31,12 +31,11 @@ $limitMonths = 2000;
       </div>
       <div class="col">
         <h1><?php echo $name; ?></h1>
-        <h2>PHP Developer</h2>
+        <h2>Web Developer</h2>
         <ul>
-          <li>Mail: hector@mail.com</li>
+          <li>Mail: sebasplay2@hotmail.com</li>
           <li>Phone: 1234567890</li>
           <li>LinkedIn: https://linkedin.com</li>
-          <li>Twitter: @hectorbenitez</li>
         </ul>
       </div>
     </div>
@@ -87,9 +86,9 @@ $limitMonths = 2000;
                       <div class="col">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum corporis at accusamus quisquam hic quos vel? Tenetur, ullam veniam consequatur esse quod cum, quam cupiditate assumenda natus maiores aperiam.</p>
                         <strong>Technologies used:</strong>
-                        <span class="badge badge-secondary">PHP</span>
                         <span class="badge badge-secondary">HTML</span>
                         <span class="badge badge-secondary">CSS</span>
+                        <span class="badge badge-secondary">Javascript</span>
                       </div>
                 </div>
             </div>
@@ -120,11 +119,11 @@ $limitMonths = 2000;
         <ul>
             <li>HTML</li>
             <li>CSS</li>
+            <li>Javascript</li>
         </ul>
         <h4>Frameworks</h4>
         <ul>
-          <li>Laravel</li>
-          <li>Bootstrap</li>
+          <li>Aun no</li>
         </ul>
         <h3 class="border-bottom-gray" >Languages</h3>
         <ul>
@@ -135,7 +134,7 @@ $limitMonths = 2000;
     </div>
     <div id="resume-footer" class="row">
       <div class="col">
-          Designed by @hectorbenitez
+          Designed by @Sebastian Rodriguez Ardila
       </div>
     </div>
   </div>
