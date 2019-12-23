@@ -39,7 +39,7 @@ echo '<div class="project">';
             echo '<div class="col">';
             echo '<p>' . $project->description. '</p>';
             echo '<strong>Technologies used: </strong>';
-            echo '<span class="badge badge-secondary">HTML aa</span>';
+            echo '<span class="badge badge-secondary">HTML</span>';
             echo '<span class="badge badge-secondary">CSS</span>';
             echo '<span class="badge badge-secondary">Javascript</span>';
             echo '</div>';
