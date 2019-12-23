@@ -1,33 +1,6 @@
 <?php
 
-require_once 'vendor/autoload.php';
-
 use App\Models\{Job, Project};
-
-// $job1 = new job('Web Developer',
-//                 'Let me create your websites for individual, startup or company/store/business.',
-//                 14,
-//                 true);
-
-// $job2 = new job('Wordpress Dev',
-//                 'Let me create your websites for individual, startup or company/store/business with the great content management system Wordpress, more easy and quickly.',
-//                 2,
-//                 true);
-
-// $job3 = new job('PHP',
-//                 'Fundamental skills about PHP for backend developer.',
-//                 1,
-//                 false);
-
-// $job4 = new job('Javascript',
-//                 'Javascript developer frontend and backend.',
-//                 5,
-//                 true);
-
-// $job5 = new job('Data Base',
-//                 'Fundamental skills about relational data base.',
-//                 1,
-//                 false);
 
 $jobs = Job::all();/*Metodo de acceso para utilziar Elocuent
 y obtener los registros que encuentre*/
