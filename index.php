@@ -3,7 +3,7 @@
 require_once 'vendor/autoload.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
-use App\Models\Job;
+use App\Models\{Job, Project};
 
 $capsule = new Capsule;
 
@@ -83,52 +83,21 @@ $limitMonths = 2000;
                 break;
               }
 
-              printElement($jobs[$idx]);
+              printJob($jobs[$idx]);
             }
             ?>
           </ul>
         </div>
         <div>
-            <h3 class="border-bottom-gray">Projects</h3>
-            <ul>
+            <h3 class="border-bottom-gray">Projects</h3><br>
+            <br><ul>
             <?php
             for($idx = 0;$idx < count($projects); $idx++) {
-              printElement($projects[$idx]);
+              printProject($projects[$idx]);
             }
             ?>
-          </ul>
-
-            <div class="project">
-                <h5>Project X</h5>
-                <div class="row">
-                    <div class="col-3">
-                        <img id="profile-picture" src="https://ui-avatars.com/api/?name=John+Doe&size=255" alt="">
-                      </div>
-                      <div class="col">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum corporis at accusamus quisquam hic quos vel? Tenetur, ullam veniam consequatur esse quod cum, quam cupiditate assumenda natus maiores aperiam.</p>
-                        <strong>Technologies used:</strong>
-                        <span class="badge badge-secondary">HTML</span>
-                        <span class="badge badge-secondary">CSS</span>
-                        <span class="badge badge-secondary">Javascript</span>
-                      </div>
-                </div>
-            </div>
-            <div class="project">
-                <h5>Project X</h5>
-                <div class="row">
-                    <div class="col-3">
-                        <img id="profile-picture" src="https://ui-avatars.com/api/?name=John+Doe&size=255" alt="">
-                      </div>
-                      <div class="col">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum corporis at accusamus quisquam hic quos vel? Tenetur, ullam veniam consequatur esse quod cum, quam cupiditate assumenda natus maiores aperiam.</p>
-                        <strong>Technologies used:</strong>
-                        <span class="badge badge-secondary">PHP</span>
-                        <span class="badge badge-secondary">HTML</span>
-                        <span class="badge badge-secondary">CSS</span>
-                      </div>
-                </div>
-            </div>
-          </div>
+            </ul>
+        </div>
       </div>
       <div class="col-3">
         <h3 class="border-bottom-gray" >Skills & Tools</h3>
