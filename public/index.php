@@ -27,12 +27,12 @@ $capsule->addConnection([
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
 
-$route = $_GET['route'] ?? '/';/* Si esta definido y tiene un valor */
+$request = Zend\Diactoros\ServerRequestFactory::fromGlobals(
+    $_SERVER,
+    $_GET,
+    $_POST,
+    $_COOKIE,
+    $_FILES
+);
 
-if($route == '/'){
-
-    require '../index.php';
-}elseif($route == 'addJob'){
-
-    require '../addJob.php';
-}
+var_dump($request->geturi()->getPath());
