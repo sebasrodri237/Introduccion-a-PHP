@@ -1,13 +1,3 @@
-<?php
-
-use App\Models\{Job, Project};
-require_once('jobs.php');
-
-$name = 'Sebastian Rodriguez Ardila';
-$limitMonths = 2000;
-
-?>
-
 <!doctype html>
 <html lang="en">
 
