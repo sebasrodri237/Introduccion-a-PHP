@@ -1,5 +1,5 @@
 <?php
-
+/*Como desarrolladores se debe evitar ataques tipo XSS*/
 /*Para que php nos muestre los 
 errores en pantalla, xampp ya lo tiene activo 
 pero en otros servidores puede que no*/
